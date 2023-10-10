@@ -1,0 +1,78 @@
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+}
+.footer_nav{
+    width:800px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 4px 4px 1px rgba(64, 64, 64,0.3);
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ddd;
+}
+.dong{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(215, 215, 215);
+    position: absolute;
+}
+.do1{left: 3px;top: 3px;}
+.do2{right: 3px;top: 3px;}
+.do3{left: 3px;bottom: 3px;}
+.do4{right: 3px;bottom: 3px;}
+
+.footer_nav_ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+    line-height: 75px;
+    list-style: none;
+    margin: 0;
+    padding-left: 40px;
+}
+.footer_nav_li{
+    width: calc(100% / 3);
+    height: 100%;
+    position: relative;
+}
+.footer_nav_li:hover > a > img{
+    transform: rotateY(360deg);
+}
+.footer_nav_a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.footer_nav_a > img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-top: 10px;
+    transition: all 1s;
+}
+.footer_nav_p{
+    font-family: 'PartialSansKR-Regular';
+    float: left;
+    color: black;
+    margin: 0;
+    margin-left: 5px;
+}
+.footer_nav_p:hover{
+    color: red;
+}
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

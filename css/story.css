@@ -1,0 +1,280 @@
+body{
+    position: relative;
+}
+/* header */
+.header{
+    width: 100%;
+    background: url(../img/sec_bg.png);
+    background-color: #e0120f;
+}
+.sec{
+    height: 400px;
+}
+.logo_a{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+.mariologo{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    font-family: 'SuperMario256.ttf';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+@font-face {
+    font-family: 'SuperMario256.ttf';
+    src: url('../fonts/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    } 
+.p1 {color: red;}
+.p2,.p4 {color: blue;}
+.p3{color: yellow;}
+.p5{color: green;}
+
+.nav{
+    width:800px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 4px 4px 1px rgba(64, 64, 64,0.3);
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ddd;
+}
+.dong{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(215, 215, 215);
+    position: absolute;
+}
+.do1{left: 3px;top: 3px;}
+.do2{right: 3px;top: 3px;}
+.do3{left: 3px;bottom: 3px;}
+.do4{right: 3px;bottom: 3px;}
+
+.nav_ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+    line-height: 75px;
+    
+}
+.nav_a{
+    display: block;
+    height: 100%;
+}
+.nav_li{
+    width: 140px;
+    height: 100%;
+    position: relative;
+}
+.nav_li1{
+    width: 120px;
+    height: 100%;
+    position: relative;
+}
+.aft::after{
+    content: "";
+    width: 2px;
+    height: 10px;
+    background-color: #dadada;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 5px);
+    right: -1px;
+}
+.nav_a > img{
+    
+    width: 30px;
+    height: 40px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.nav_p{
+    width: 75px;
+    font-family: 'PartialSansKR-Regular';
+    float: left;
+    color: black;
+}
+.nav_p:hover{
+    color: red;
+}
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::before{
+    width: 1px;
+    height: 5px;
+    background-color: gray;
+
+}
+
+/* section */
+.main_sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tion{
+    margin-top: 3px;
+    margin-right: 3px;
+    width:calc((100% - (3px *2 ))/2);
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.section1{background: url("../img/mario_bg.gif");}
+.section2{background: url("../img/luigi_bg.gif");}
+.section3{background: url("../img/kino_bg.gif");}
+.section4{background: url("../img/yoshi_bg.gif");}
+.section5{background: url("../img/koopa_bg.gif");}
+.section6{background: url("../img/queen_bg.gif");}
+
+.tion:hover > div:nth-child(1){
+    transform: scale(2.5);
+}
+.section1_img{background: url("../img/mario.png");}
+.section2_img{background: url("../img/luigi.png");}
+.section3_img{background: url("../img/kino.png");}
+.section4_img{background: url("../img/yoshi.png");}
+.section5_img{background: url("../img/koopa.png");}
+.section6_img{background: url("../img/queen.png");}
+
+.secimg{
+    width:35%;
+    height:100%;
+    float: left;
+    transform: scale(2);
+    animation-duration: 1s;
+    transition: all 1s;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.secb{
+    width: calc(65% - (100px));
+    height: calc(450px - (40px));
+    background-color: white;
+    border-radius: 20px;
+    float: left;
+    margin: 50px 20px;
+    
+}
+
+
+.p_top{
+    width: 150px;
+    margin: 30px auto;
+    font-size: 30px;
+    font-family: 'PartialSansKR-Regular';
+    text-align: center;
+}
+.p_bottom{
+    padding: 0 50px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: #373737;
+    line-height: 32px;
+}
+.ptop1{color: #e0120f;}
+.ptop2{color: #08a936;}
+.ptop3{color: #17419a;}
+.ptop4{color: #70b921;}
+.ptop5{color: #f8be10;}
+.ptop6{color: #f096be;}
+.p_button_box{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 25px auto;
+    display: block;
+    color: #6f6f6f;
+    font-family: 'PartialSansKR-Regular';
+}
+
+.box_imgs{
+    width: 100%;
+    height: 111px;
+    position: relative;
+   
+    overflow: hidden;
+}
+.box_imgs_bg{
+    width: 100%;
+    height: 72%;
+    background-image: url(../img/footer_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+}
+.box_img{
+    background: url(../img/등껍질.png) ;
+    background-size: cover;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    right: 55px;
+    top:30%;
+    animation-name: turtle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.voice_boxs{
+    width: 100%;
+    height: 54px;
+    
+    display: flex;
+}
+.btn{
+    display: block;
+    background-color: #f8be10;
+    margin: 5px auto;
+    width: 100px;
+    height: 40px;
+    z-index: 9;
+    border: 0;
+    font-weight: 900;
+    color: #5f4700;
+    box-shadow: 4px 4px 3px #ddd;
+}
+.btn:hover{
+    background-color: darkgoldenrod;
+}
+.go_top{
+    display: block;
+    width: 90px;
+    height: 200px;
+    background: url("../img/메롱.png");
+    background-size: cover;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
+.go_top:hover{
+    transform: translateY(50px);
+}
+
+#section3{
+left: -100%;
+transition: all 1s;
+
+}

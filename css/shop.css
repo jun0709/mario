@@ -1,0 +1,487 @@
+/* header */
+body{
+    position: relative;
+}
+body::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: url(../img/shop_bg.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -9;
+    opacity: 0.5;
+}
+.view{
+    height: 100vh;
+}
+.logo_a {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 55px;
+}
+
+.mariologo{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    font-family: 'SuperMario256.ttf';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'SuperMario256.ttf';
+    src: url('../fonts/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p1 {color: red;}
+.p2,.p4 {color: blue;}
+.p3{color: yellow;}
+.p5{color: green;}
+
+.swiper {
+    /* margin-top: 50px; */
+width: 100%;
+height: 60vh;
+}
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#new_arr {
+    /* height:40vw; 
+    max-height: 800px;
+    min-height: 400px; */
+
+    position: relative;
+    overflow: hidden;
+} 
+.swiper-button-next,
+.swiper-button-prev {
+    color: red;
+}
+
+.main{
+    width: 100%;
+    max-width: 1200px;
+    
+    margin: 0 auto;
+}
+.main_nav{
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+.main_nav_ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main_nav_li{
+    font-size: 20px;
+    
+    text-align: center;
+    color: #999999;
+}
+/* .swiperwrapper1{
+    display: none;
+} */
+
+/* //////////////////////////////////////// */
+
+
+
+.swiper.mySwiper1 {
+
+    padding: 60px 0 !important;
+}
+.swiper.mySwiper2{
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    padding: 60px 0 !important;
+
+}
+.swiper.mySwiper3{
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    padding: 60px 0 !important;
+
+}
+.swiper.mySwiper4{
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    padding: 60px 0 !important;
+
+}
+.swiper.mySwiper5{
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    padding: 60px 0 !important;
+
+}
+.swiper.mySwiper6{
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    padding: 60px 0 !important;
+
+}
+.swiper.active { 
+    top: 0 !important;
+}
+
+.swiper_bg{
+    background: url(../img/swiper_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color:inherit;
+}
+.swiper_img_mario0{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_mario.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+   
+}
+.swiper_img_mario1{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_mario1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_mario2{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_mario2.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_mario3{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_mario3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_luigi0{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_luigi0.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_luigi1{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_luigi1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_luigi2{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_luigi3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_luigi3{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_luigi0.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_luigi4{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_luigi4.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_luigi5{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_luigi3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    background-color:transparent;
+}
+.swiper_img_kino0{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_kino0.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+   
+}
+.swiper_img_kino1{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_kino1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_kino2{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_kino2.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_kino3{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_kino3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_kino4{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_kino1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_kino5{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_kino3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_yosh0{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_yosh0.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+   
+}
+.swiper_img_yosh1{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_yosh1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_yosh2{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_yosh2.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_yosh3{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_yosh3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_yosh4{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_yosh1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_yosh5{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_yosh3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_ku0{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_ku0.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_ku1{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_ku1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_ku2{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_ku2.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_ku3{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_ku3.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_pi0{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_pi0.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_pi1{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_pi1.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
+.swiper_img_pi2{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    background-image: url(../img/swiper_pi2.png);
+    background-size: cover;
+    width: 50%;
+    height: 60%;
+    
+}
