@@ -6,7 +6,7 @@ body::after{
     content: "";
     width: 100%;
     height: 100vh;
-    background: url(../img/shop_bg.png);
+    background: url(../img/shop/swiper_bg1.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -15,7 +15,7 @@ body::after{
     right: 0px;
     bottom: 0px;
     z-index: -9;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .view{
     height: 100vh;
@@ -102,386 +102,225 @@ object-fit: cover;
     justify-content: space-evenly;
 }
 .main_nav_li{
-    font-size: 20px;
-    
+    font-size: 25px;
+    font-family: 'SuperMario256.ttf';
     text-align: center;
-    color: #999999;
+    color: black;
+    background-color: white;
+    border:3px solid;
+    border-radius: 50px;
+    width: calc((100% - (6* 6))/6);
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+}   
+#nav_li_mario{
+    color: #e0120f;
 }
-/* .swiperwrapper1{
-    display: none;
-} */
+#nav_li_luigi{
+    color: #08a936;
+}
+#nav_li_kino{
+    color: #17419a;
+}
+#nav_li_yosh{
+    color: #70b921;
+}
+#nav_li_koopa{
+    color: #f8be10;
+}
+#nav_li_queen{
+    color: #f096be;
+}
 
 /* //////////////////////////////////////// */
 
 
 
 .swiper.mySwiper1 {
-
     padding: 60px 0 !important;
+    display: none ;
 }
-.swiper.mySwiper2{
-    position: absolute !important;
-    top: 100%;
-    left: 0;
-    padding: 60px 0 !important;
-
-}
-.swiper.mySwiper3{
-    position: absolute !important;
-    top: 100%;
-    left: 0;
-    padding: 60px 0 !important;
-
-}
-.swiper.mySwiper4{
-    position: absolute !important;
-    top: 100%;
-    left: 0;
-    padding: 60px 0 !important;
-
-}
-.swiper.mySwiper5{
-    position: absolute !important;
-    top: 100%;
-    left: 0;
-    padding: 60px 0 !important;
-
-}
+.swiper.mySwiper2,
+.swiper.mySwiper3,
+.swiper.mySwiper4,
+.swiper.mySwiper5,
 .swiper.mySwiper6{
-    position: absolute !important;
-    top: 100%;
-    left: 0;
     padding: 60px 0 !important;
-
+    display: none;
 }
+
 .swiper.active { 
     top: 0 !important;
 }
 
 .swiper_bg{
-    background: url(../img/swiper_bg.jpg);
+    background: url(../img/shop/swiper_bg.jpg);
     background-size: cover;
+    background-color: rgba(0, 0, 0, 1);
     width: 100%;
     height: 100%;
     position: relative;
-    background-color:inherit;
+}
+.swipimg{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 70%;
 }
 .swiper_img_mario0{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_mario.png);
+    background-image: url(../img/shop/swiper_mario.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-   
+    background-position: center;
 }
 .swiper_img_mario1{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_mario1.png);
+    background-image: url(../img/shop/swiper_mario1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_mario2{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_mario2.png);
+    background-image: url(../img/shop/swiper_mario2.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_mario3{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_mario3.png);
+    background-image: url(../img/shop/swiper_mario3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_luigi0{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_luigi0.png);
+    background-image: url(../img/shop/swiper_luigi0.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_luigi1{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_luigi1.png);
+    background-image: url(../img/shop/swiper_luigi1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_luigi2{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_luigi3.png);
+    background-image: url(../img/shop/swiper_luigi3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_luigi3{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_luigi0.png);
+    background-image: url(../img/shop/swiper_luigi0.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_luigi4{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_luigi4.png);
+    background-image: url(../img/shop/swiper_luigi4.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_luigi5{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_luigi3.png);
+    background-image: url(../img/shop/swiper_luigi3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    background-color:transparent;
+    background-position: center;
 }
 .swiper_img_kino0{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_kino0.png);
+    background-image: url(../img/shop/swiper_kino0.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-   
+    background-position: center;
 }
 .swiper_img_kino1{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_kino1.png);
+    background-image: url(../img/shop/swiper_kino1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_kino2{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_kino2.png);
+    background-image: url(../img/shop/swiper_kino2.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_kino3{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_kino3.png);
+    background-image: url(../img/shop/swiper_kino3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_kino4{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_kino1.png);
+    background-image: url(../img/shop/swiper_kino1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_kino5{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_kino3.png);
+    background-image: url(../img/shop/swiper_kino3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_yosh0{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_yosh0.png);
+    background-image: url(../img/shop/swiper_yosh0.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-   
+    background-position: center;
 }
 .swiper_img_yosh1{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_yosh1.png);
+    background-image: url(../img/shop/swiper_yosh1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_yosh2{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_yosh2.png);
+    background-image: url(../img/shop/swiper_yosh2.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_yosh3{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_yosh3.png);
+    background-image: url(../img/shop/swiper_yosh3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_yosh4{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_yosh1.png);
+    background-image: url(../img/shop/swiper_yosh1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_yosh5{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_yosh3.png);
+    background-image: url(../img/shop/swiper_yosh3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_ku0{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_ku0.png);
+    background-image: url(../img/shop/swiper_ku0.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_ku1{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_ku1.png);
+    background-image: url(../img/shop/swiper_ku1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_ku2{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_ku2.png);
+    background-image: url(../img/shop/swiper_ku2.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_ku3{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_ku3.png);
+    background-image: url(../img/shop/swiper_ku3.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_pi0{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_pi0.png);
+    background-image: url(../img/shop/swiper_pi0.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_pi1{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_pi1.png);
+    background-image: url(../img/shop/swiper_pi1.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
 }
 .swiper_img_pi2{
-    position: absolute;
-    bottom: 50px;
-    left: calc(50%);
-    transform: translateX(-50%);
-    background-image: url(../img/swiper_pi2.png);
+    background-image: url(../img/shop/swiper_pi2.png);
     background-size: cover;
-    width: 50%;
-    height: 60%;
-    
+    background-position: center;
+}
+
+
+.display_block{
+    display: block !important;
+}
+.display_none{
+    display: none;
 }

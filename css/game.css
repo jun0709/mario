@@ -1,8 +1,8 @@
 body{
     width: 100%;
     
-    background: url(../img/bg-section.jpg);
-    
+    background: url(../img/game/bg-section.jpg);
+
 }
 #wrap{
     overflow: hidden;
@@ -14,6 +14,52 @@ body{
     position: relative;
     
 }
+body{margin: 0;}
+.banner_box {
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.main_banner_img{
+    width: 754px;
+    height: 450px;
+    background-image: url("../img/game/watch-pic.png");
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+.item {
+    position: absolute;
+    width: 362px;
+    height: 242px;
+    top: 105px;
+    left: 587px
+}
+.item0{background: url(../img/game/banner_img0.jpg);background-size: cover; background-position: center;}
+.item1{background: url(../img/game/banner_img1.jpg);background-size: cover; background-position: center;}
+.item2{background: url(../img/game/banner_img2.jpg);background-size: cover; background-position: center;}
+.item3{background: url(../img/game/banner_img3.jpg);background-size: cover; background-position: center;}
+.item4{background: url(../img/game/banner_img4.jpg);background-size: cover; background-position: center;}
+.item5{background: url(../img/game/banner_img5.jpg);background-size: cover; background-position: center;}
+.item6{background: url(../img/game/banner_img6.jpg);background-size: cover; background-position: center;}
+
+.btn_item {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ce3143;
+    position: absolute;
+    bottom:100px;
+    
+}
+.btn_item_L { right:calc(40% - 190px);}
+.btn_item_R { right:calc(40% - 270px);}
+
+
 
 .game_h1{
     width: 100%;
@@ -51,39 +97,39 @@ body{
     height:70%;
 }
 .game_box0_img{
-    background: url(../img/banner_img4.jpg);
+    background: url(../img/game/banner_img4.jpg);
     background-size: cover  ;
 }
 .game_box1_img{
-    background: url(../img/banner_img5.jpg);
+    background: url(../img/game/banner_img5.jpg);
     background-size: cover  ;
 }
 .game_box2_img{
-    background: url(../img/banner_img6.jpg);
+    background: url(../img/game/banner_img6.jpg);
     background-size: cover  ;
 }
 .game_box3_img{
-    background: url(../img/banner_img7.jpg);
+    background: url(../img/game/banner_img7.jpg);
     background-size: cover  ;
 }
 .game_box4_img{
-    background: url(../img/banner_img8.jpg);
+    background: url(../img/game/banner_img8.jpg);
     background-size: cover  ;
 }
 .game_box5_img{
-    background: url(../img/banner_img9.jpg);
+    background: url(../img/game/banner_img9.jpg);
     background-size: cover  ;
 }
 .game_box6_img{
-    background: url(../img/banner_img10.jpg);
+    background: url(../img/game/banner_img10.jpg);
     background-size: cover  ;
 }
 .game_box7_img{
-    background: url(../img/banner_img11.jpg);
+    background: url(../img/game/banner_img11.jpg);
     background-size: cover  ;
 }
 .game_box8_img{
-    background: url(../img/banner_img12.jpg);
+    background: url(../img/game/banner_img12.jpg);
     background-size: cover  ;
 }
 .game_box_p{
@@ -117,19 +163,19 @@ body{
     height:70%;
 }
 .comming_box0_img{
-    background: url(../img/banner_img0.jpg);
+    background: url(../img/game//banner_img0.jpg);
     background-size: cover;
 }
 .comming_box1_img{
-    background: url(../img/banner_img1.jpg);
+    background: url(../img/game//banner_img1.jpg);
     background-size: cover;
 }
 .comming_box2_img{
-    background: url(../img/banner_img2.jpg);
+    background: url(../img/game//banner_img2.jpg);
     background-size: cover;
 }
 .game_box_img{
-    background: url(../img/banner_img3.jpg);
+    background: url(../img/game//banner_img3.jpg);
     background-size: cover;
 }
 .comming_box:hover{
@@ -147,7 +193,7 @@ body{
     right:-100%;
 }
 .move_bg_img0{
-    background: url(../img/nuguri_mario.png);
+    background: url(../img/game/nuguri_mario.png);
     background-size: cover;
    width: 100%;
    height: 100%;
@@ -161,7 +207,7 @@ body{
     left: -100%;
 }
 .move_bg_img1{
-    background: url(../img/tiger_mario.png);
+    background: url(../img/game/tiger_mario.png);
     background-size: cover;
    width: 100%;
    height: 100%;
@@ -175,8 +221,23 @@ body{
     right: -100%;
 }
 .move_bg_img2{
-    background: url(../img/sky_mario.png);
+    background: url(../img/game/sky_mario.png);
     background-size: cover;
    width: 100%;
    height: 100%;
+}
+.go_top{
+    display: block;
+    width: 90px;
+    height: 200px;
+    background: url("../img/topbutton.png");
+    background-size: cover;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
+.go_top:hover{
+    transform: translateY(50px);
 }

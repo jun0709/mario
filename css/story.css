@@ -4,7 +4,7 @@ body{
 /* header */
 .header{
     width: 100%;
-    background: url(../img/sec_bg.png);
+    background: url(../img/story/sec_bg.png);
     background-color: #e0120f;
 }
 .sec{
@@ -136,28 +136,28 @@ body{
     overflow: hidden;
     position: relative;
 }
-.section1{background: url("../img/mario_bg.gif");}
-.section2{background: url("../img/luigi_bg.gif");}
-.section3{background: url("../img/kino_bg.gif");}
-.section4{background: url("../img/yoshi_bg.gif");}
-.section5{background: url("../img/koopa_bg.gif");}
-.section6{background: url("../img/queen_bg.gif");}
+.section1{background: url("../img/story/mario_bg.gif");}
+.section2{background: url("../img/story/luigi_bg.gif");}
+.section3{background: url("../img/story/kino_bg.gif");}
+.section4{background: url("../img/story/yoshi_bg.gif");}
+.section5{background: url("../img/story/koopa_bg.gif");}
+.section6{background: url("../img/story/queen_bg.gif");}
 
 .tion:hover > div:nth-child(1){
-    transform: scale(2.5);
+    transform: scale(1.7);
 }
-.section1_img{background: url("../img/mario.png");}
-.section2_img{background: url("../img/luigi.png");}
-.section3_img{background: url("../img/kino.png");}
-.section4_img{background: url("../img/yoshi.png");}
-.section5_img{background: url("../img/koopa.png");}
-.section6_img{background: url("../img/queen.png");}
+.section1_img{background: url("../img/story/mario.png");}
+.section2_img{background: url("../img/story/luigi.png");}
+.section3_img{background: url("../img/story/kino.png");}
+.section4_img{background: url("../img/story/yoshi.png");}
+.section5_img{background: url("../img/story/koopa.png");}
+.section6_img{background: url("../img/story/queen.png");}
 
 .secimg{
     width:35%;
     height:100%;
     float: left;
-    transform: scale(2);
+    transform: scale(1.5);
     animation-duration: 1s;
     transition: all 1s;
     background-size: contain;
@@ -208,34 +208,6 @@ body{
     font-family: 'PartialSansKR-Regular';
 }
 
-.box_imgs{
-    width: 100%;
-    height: 111px;
-    position: relative;
-   
-    overflow: hidden;
-}
-.box_imgs_bg{
-    width: 100%;
-    height: 72%;
-    background-image: url(../img/footer_bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-}
-.box_img{
-    background: url(../img/등껍질.png) ;
-    background-size: cover;
-    width: 50px;
-    height: 40px;
-    position: absolute;
-    right: 55px;
-    top:30%;
-    animation-name: turtle;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
 .voice_boxs{
     width: 100%;
     height: 54px;
@@ -256,25 +228,4 @@ body{
 }
 .btn:hover{
     background-color: darkgoldenrod;
-}
-.go_top{
-    display: block;
-    width: 90px;
-    height: 200px;
-    background: url("../img/메롱.png");
-    background-size: cover;
-    position:absolute;
-    right: 0;
-    bottom: 0;
-    transform: translateY(0px);
-    transition: all 0.5s;
-}
-.go_top:hover{
-    transform: translateY(50px);
-}
-
-#section3{
-left: -100%;
-transition: all 1s;
-
 }
