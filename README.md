@@ -9,7 +9,7 @@
 
 
 
-<h1><img src="./img/icon.png" width="30px"> MARIO - 2023.09 프로젝트</h1>
+<h1>MARIO - 2023.09 프로젝트</h1>
 
 ##### 사용기술
 
