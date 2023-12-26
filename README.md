@@ -36,7 +36,7 @@
 
 ## **메인페이지**
 
-
+![mario1](https://github.com/sungjunhyuck/portfolio/assets/146051592/aba604b0-5ae1-42c7-9de7-c276b91e2f0d)
 
 - 로딩화면 일정시간 지난 후 슬라이드 다운
 - 배경 구름 애니메이션 왼쪽으로 이동
@@ -48,7 +48,7 @@
 
 ## **스토리페이지**
 
-
+![mario2](https://github.com/sungjunhyuck/portfolio/assets/146051592/e3522513-ff9e-492b-bf92-820c39c06fd5)
 - 로고 클릭시 메인페이지 이동 
 - 네비 클릭시 캐릭터에 맞는 내용으로 이동
 - 네비 호버시 글씨 색 변경
@@ -60,7 +60,7 @@
 
 ## **게임 페이지**
 
-
+![mario3](https://github.com/sungjunhyuck/portfolio/assets/146051592/e4ba331e-d1b2-4eb6-9c77-0501876ca933)
 
 
 - 상단 배너 슬라이드 사용 
@@ -74,6 +74,7 @@
 
 ## **굿즈 페이지**
 
+![mario4](https://github.com/sungjunhyuck/portfolio/assets/146051592/57816b08-0f86-4fef-9d0b-423ad092b456)
 
 
 - 스와이퍼를 이용하여 이미지 슬라이드  
