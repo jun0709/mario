@@ -226,18 +226,3 @@ body{margin: 0;}
    width: 100%;
    height: 100%;
 }
-.go_top{
-    display: block;
-    width: 90px;
-    height: 200px;
-    background: url("../img/topbutton.png");
-    background-size: cover;
-    position:absolute;
-    right: 0;
-    bottom: 0;
-    transform: translateY(0px);
-    transition: all 0.5s;
-}
-.go_top:hover{
-    transform: translateY(50px);
-}
