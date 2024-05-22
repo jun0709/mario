@@ -36,7 +36,7 @@
 
 ## **메인페이지**
 
-![mario1](https://github.com/sungjunhyuck/portfolio/assets/146051592/aba604b0-5ae1-42c7-9de7-c276b91e2f0d)
+![mario1](https://github.com/jun0709/mario/assets/146051592/4d3bfb86-ff08-49e3-8050-6a1af6d95008)
 
 - 로딩화면 일정시간 지난 후 슬라이드 다운
 - 배경 구름 애니메이션 왼쪽으로 이동
@@ -48,7 +48,8 @@
 
 ## **스토리페이지**
 
-![mario2](https://github.com/sungjunhyuck/portfolio/assets/146051592/e3522513-ff9e-492b-bf92-820c39c06fd5)
+![mario2](https://github.com/jun0709/mario/assets/146051592/83752c4f-0190-40c8-80ee-fd90ee6f8cd4)
+
 - 로고 클릭시 메인페이지 이동 
 - 네비 클릭시 캐릭터에 맞는 내용으로 이동
 - 네비 호버시 글씨 색 변경
@@ -60,8 +61,7 @@
 
 ## **게임 페이지**
 
-![mario3](https://github.com/sungjunhyuck/portfolio/assets/146051592/e4ba331e-d1b2-4eb6-9c77-0501876ca933)
-
+![mario3](https://github.com/jun0709/mario/assets/146051592/fd40ffd2-063c-40e7-8c9d-101b9385e963)
 
 - 상단 배너 슬라이드 사용 
 - B버튼 클릭시 왼쪽으로 슬라이드 이동
@@ -74,8 +74,7 @@
 
 ## **굿즈 페이지**
 
-![mario4](https://github.com/sungjunhyuck/portfolio/assets/146051592/57816b08-0f86-4fef-9d0b-423ad092b456)
-
+![mario4](https://github.com/jun0709/mario/assets/146051592/3e31d573-75de-458d-bcd6-1173ad53ce99)
 
 - 스와이퍼를 이용하여 이미지 슬라이드  
 - 네비 버튼클릭시 캐릭터에 맞는 캐릭터 상품 나타남
