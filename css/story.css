@@ -1,3 +1,4 @@
+@charset "utf-8";
 body{
     position: relative;
 }
@@ -134,7 +135,11 @@ body{
     width:calc((100% - (3px *2 ))/2);
     height: 500px;
     overflow: hidden;
-    position: relative;
+
+}
+.view{
+    width: 100%;
+    height: 100%;
 }
 .section1{background: url("../img/story/mario_bg.gif");}
 .section2{background: url("../img/story/luigi_bg.gif");}
@@ -143,7 +148,7 @@ body{
 .section5{background: url("../img/story/koopa_bg.gif");}
 .section6{background: url("../img/story/queen_bg.gif");}
 
-.tion:hover > div:nth-child(1){
+.view:hover > div:nth-child(1){
     transform: scale(1.7);
 }
 .section1_img{background: url("../img/story/mario.png");}
@@ -164,17 +169,39 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.secb{
-    width: calc(65% - (100px));
-    height: calc(450px - (40px));
-    background-color: white;
-    border-radius: 20px;
-    float: left;
-    margin: 50px 20px;
-    
+
+.outer{position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
 }
 
-
+.secb{
+    position: absolute;
+    width: 500px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background: #fff;
+}
+.close_btn{
+    text-align: center;
+    padding: 20px 0;
+}
+.close_btn >span{
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 40px;
+    background: #f8be10;
+    line-height: 40px;
+}
 .p_top{
     width: 150px;
     margin: 30px auto;
@@ -184,9 +211,8 @@ body{
 }
 .p_bottom{
     padding: 0 50px;
-    height: 170px;
-    margin: 0 auto;
-    text-align: left;
+    margin: auto;
+    text-align: justify;
     font-weight: bold;
     font-size: 16px;
     color: #373737;
@@ -211,7 +237,7 @@ body{
 .voice_boxs{
     width: 100%;
     height: 54px;
-    
+    margin-top: 50px;
     display: flex;
 }
 .btn{
@@ -228,4 +254,54 @@ body{
 }
 .btn:hover{
     background-color: darkgoldenrod;
+}
+.sec_Text{
+    position: relative;
+    height: 100%;
+}
+
+.sec_btn{
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 18%;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'PartialSansKR-Regular';
+    color: #bbbbbb;
+}
+.char_name{
+    position: absolute;
+    top: 40%;
+    right: 22%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'SuperMario256.ttf';
+}
+@media screen and (max-width:1440px) {
+    .voice_boxs{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .nav{
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px) {
+    
+    .nav_p{
+        display: none;
+    }
+    .tion{
+        width: 100%;
+    }
+    .secb{
+        width: 100%;
+    }
 }
