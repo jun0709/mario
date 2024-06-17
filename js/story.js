@@ -101,5 +101,17 @@ $(document).ready(function() {
     })
 
 
-    
+    $(".view").click(function(){
+        $(this).parent().children(".outer").show()
+    })
+    $(".close_btn").click(function(){
+        $(".outer").hide()
+    })
+    $(".menu_box").click(function(){
+        $(".menu_btn").stop().slideToggle();
+        $(".menu_btn").css({
+            "width":"200px",
+            "height":"300px"
+        })
+       })
 })
