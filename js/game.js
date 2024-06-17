@@ -117,8 +117,8 @@ $(document).ready(function () {
     }
 
     let sec1_o_top = $('.game_h1').offset().top;
-    let sec2_o_top = $('.game_box2_img').offset().top;
-    let sec3_o_top = $('.game_box4_img').offset().top;
+    let sec2_o_top = $('.game_box11_img').offset().top;
+    let sec3_o_top = $('.game_box0_img').offset().top;
     $(window).scroll(function () {
         let s_top = $(window).scrollTop();
         if (sec1_o_top <= s_top) {
@@ -128,7 +128,15 @@ $(document).ready(function () {
                 transform: 'translate(50%, -50%)'
 
             })
-
+            if($(window).width()<=1024){
+                if (sec1_o_top <= s_top) {
+                    $('.move_bg0').css({
+                        right: '20%',
+                        top: '15%',
+                        transform: 'translate(50%, -50%)'
+                    })
+                } 
+            }
         }
         else {
             $('.move_bg0').css({
@@ -144,7 +152,15 @@ $(document).ready(function () {
 
 
             })
-
+            if($(window).width()<=1024){
+                if (sec2_o_top <= s_top) {
+                    $('.move_bg1').css({
+                        left: '-20%',
+                        top: '35%',
+                        transform: 'translate(50%, -50%)'
+                    })
+                }
+            }
         }
         else {
             $('.move_bg1').css({
@@ -160,6 +176,18 @@ $(document).ready(function () {
                 top: '60%',
                 transform: 'translate(50%, -50%)'
             })
+            if($(window).width()<=1024){
+                if (sec3_o_top <= s_top) {
+                    $('.move_bg2').css({
+                        right: '20%',
+                        top: '60%',
+                        transform: 'translate(50%, -50%)'
+        
+                    })
+        
+                }
+                
+            }
         }
         else {
             $('.move_bg2').css({
@@ -181,5 +209,14 @@ $(document).ready(function () {
             scrollTop: $(href).offset().top
         }, 500)
     })
+
+   $(".menu_box").click(function(){
+    $(".menu_btn").stop().slideToggle();
+    $(".menu_btn").css({
+        "width":"200px",
+        "height":"300px"
+    })
+   })
+   
 });
 
