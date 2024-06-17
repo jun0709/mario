@@ -1,36 +1,32 @@
-body{
-    width: 100%;
-    
-    background: url(../img/game/bg-section.jpg);
+@charset "utf-8";
 
-}
-#wrap{
-    overflow: hidden;
-}
-.main{
+body {
     width: 100%;
-    max-width: 1280px;
-    margin: 100px auto;
-    position: relative;
-    
+    background: url(../img/game/bg-section.jpg);
 }
-body{margin: 0;}
+
+#wrap {
+    overflow: hidden;
+    position: relative;
+}
+
 .banner_box {
     width: 100%;
     height: 450px;
-    background-color: black;
+    background: #000;
     position: relative;
     overflow: hidden;
 }
-.main_banner_img{
+
+.main_banner_img {
     width: 754px;
     height: 450px;
-    background-image: url("../img/game/watch-pic.png");
-    background-size: cover;
+    background: url("../img/game/watch-pic.png")center/ cover;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-} 
+}
+
 .item {
     position: absolute;
     width: 362px;
@@ -38,13 +34,34 @@ body{margin: 0;}
     top: 105px;
     left: 587px
 }
-.item0{background: url(../img/game/banner_img0.jpg);background-size: cover; background-position: center;}
-.item1{background: url(../img/game/banner_img1.jpg);background-size: cover; background-position: center;}
-.item2{background: url(../img/game/banner_img2.jpg);background-size: cover; background-position: center;}
-.item3{background: url(../img/game/banner_img3.jpg);background-size: cover; background-position: center;}
-.item4{background: url(../img/game/banner_img4.jpg);background-size: cover; background-position: center;}
-.item5{background: url(../img/game/banner_img5.jpg);background-size: cover; background-position: center;}
-.item6{background: url(../img/game/banner_img6.jpg);background-size: cover; background-position: center;}
+
+.item0 {
+    background: url(../img/game/banner_img0.jpg)center /cover;
+}
+
+.item1 {
+    background: url(../img/game/banner_img1.jpg)center /cover;
+}
+
+.item2 {
+    background: url(../img/game/banner_img2.jpg)center /cover;
+}
+
+.item3 {
+    background: url(../img/game/banner_img3.jpg)center /cover;
+}
+
+.item4 {
+    background: url(../img/game/banner_img4.jpg)center /cover;
+}
+
+.item5 {
+    background: url(../img/game/banner_img5.jpg)center /cover;
+}
+
+.item6 {
+    background: url(../img/game/banner_img6.jpg)center /cover;
+}
 
 .btn_item {
     width: 45px;
@@ -52,177 +69,248 @@ body{margin: 0;}
     border: none;
     border-radius: 50%;
     background-color: #ce3143;
+    position: fixed;
+    bottom: 100px;
+
+}
+
+.btn_item_L {
+    right: calc(40% - 190px);
+}
+
+.btn_item_R {
+    right: calc(40% - 270px);
+}
+
+.main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 100px auto;
+    position: relative;
+
+}
+
+.move_bg0 {
     position: absolute;
-    bottom:100px;
-    
-}
-.btn_item_L { right:calc(40% - 190px);}
-.btn_item_R { right:calc(40% - 270px);}
-
-
-
-.game_h1{
-    width: 100%;
-    color: red;
-    font-size: 80px;
-    font-family: 'BagelFatOne-Regular.ttf';
-    margin: 50px 0;
-}
-@font-face {
-    font-family: 'BagelFatOne-Regular.ttf';
-    src: url('../fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} 
-.game_sec {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    
-}
-.game_box {
-    width: calc((100% - 50px) / 2);
-    aspect-ratio: 1/0.8;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-.game_box:hover{
-    transform: translateY(-30px);
-    box-shadow: 4px 6px 4px #a8a8a8;
-}
-.gbi{
-    width: 100%;
-    height:70%;
-}
-.game_box0_img{
-    background: url(../img/game/banner_img4.jpg);
-    background-size: cover  ;
-}
-.game_box1_img{
-    background: url(../img/game/banner_img5.jpg);
-    background-size: cover  ;
-}
-.game_box2_img{
-    background: url(../img/game/banner_img6.jpg);
-    background-size: cover  ;
-}
-.game_box3_img{
-    background: url(../img/game/banner_img7.jpg);
-    background-size: cover  ;
-}
-.game_box4_img{
-    background: url(../img/game/banner_img8.jpg);
-    background-size: cover  ;
-}
-.game_box5_img{
-    background: url(../img/game/banner_img9.jpg);
-    background-size: cover  ;
-}
-.game_box6_img{
-    background: url(../img/game/banner_img10.jpg);
-    background-size: cover  ;
-}
-.game_box7_img{
-    background: url(../img/game/banner_img11.jpg);
-    background-size: cover  ;
-}
-.game_box8_img{
-    background: url(../img/game/banner_img12.jpg);
-    background-size: cover  ;
-}
-.game_box_p{
-    margin: 5px;
-}
-.comming_box_p{
-    margin: 5px;
-}
-.comming_h1{
-    width: 100%;
-    color: red;
-    font-size: 80px;
-    font-family: 'BagelFatOne-Regular.ttf';
-    margin: 50px 0;
-}
-.comming_sec {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-.comming_box {
-    width: calc((100% - 50px) / 2);
-    aspect-ratio: 1/0.8;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-.cbi{
-    width: 100%;
-    height:70%;
-}
-.comming_box0_img{
-    background: url(../img/game//banner_img0.jpg);
-    background-size: cover;
-}
-.comming_box1_img{
-    background: url(../img/game//banner_img1.jpg);
-    background-size: cover;
-}
-.comming_box2_img{
-    background: url(../img/game//banner_img2.jpg);
-    background-size: cover;
-}
-.game_box_img{
-    background: url(../img/game//banner_img3.jpg);
-    background-size: cover;
-}
-.comming_box:hover{
-    transform: translateY(-30px);
-    box-shadow: 4px 6px 4px #a8a8a8;
-}
-
-.move_bg0{
-    position: absolute;
-    
     width: 500px;
     height: 500px;
     transition: all 0.5s;
     z-index: -1;
-    right:-100%;
+    right: -100%;
+    top: 0;
 }
-.move_bg_img0{
-    background: url(../img/game/nuguri_mario.png);
-    background-size: cover;
-   width: 100%;
-   height: 100%;
+
+.move_bg_img0 {
+    background: url(../img/game/nuguri_mario.png)center/cover;
+    width: 100%;
+    height: 100%;
 }
-.move_bg1{
+
+.move_bg1 {
     position: absolute;
     width: 500px;
     height: 600px;
     transition: all 0.5s;
     z-index: -1;
     left: -100%;
+    top: 30%;
 }
-.move_bg_img1{
-    background: url(../img/game/tiger_mario.png);
-    background-size: cover;
-   width: 100%;
-   height: 100%;
+
+.move_bg_img1 {
+    background: url(../img/game/tiger_mario.png)center/cover;
+    width: 100%;
+    height: 100%;
 }
-.move_bg2{
+
+.move_bg2 {
     position: absolute;
     width: 500px;
     height: 550px;
     transition: all 0.5s;
     z-index: -1;
     right: -100%;
+    top: 50%;
 }
-.move_bg_img2{
-    background: url(../img/game/sky_mario.png);
-    background-size: cover;
-   width: 100%;
-   height: 100%;
+
+.move_bg_img2 {
+    background: url(../img/game/sky_mario.png)center/cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.game_h1 {
+    width: 100%;
+    color: #ff0000;
+    font-size: 80px;
+    font-family: 'BagelFatOne-Regular.ttf';
+    margin: 50px 0;
+}
+
+@font-face {
+    font-family: 'BagelFatOne-Regular.ttf';
+    src: url('../fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.game_sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.game_box {
+    width: calc((100% - 50px) / 2);
+    transition: all 0.5s;
+    border-radius: 10px 10px 0 0;
+    background: #fff;
+}
+
+.game_box:hover {
+    transform: translateY(-30px);
+    box-shadow: 4px 6px 4px #a8a8a8;
+}
+
+.gbi {
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+
+}
+
+.game_box_img {
+    background: url(../img/game/banner_img3.jpg)center /cover;
+}
+
+.game_box0_img {
+    background: url(../img/game/banner_img4.jpg)center/cover;
+}
+
+.game_box1_img {
+    background: url(../img/game/banner_img5.jpg)center/cover;
+}
+
+.game_box2_img {
+    background: url(../img/game/banner_img6.jpg)center/cover;
+}
+
+.game_box3_img {
+    background: url(../img/game/banner_img7.jpg)center/cover;
+}
+
+.game_box4_img {
+    background: url(../img/game/banner_img8.jpg)center/cover;
+}
+
+.game_box5_img {
+    background: url(../img/game/banner_img9.jpg)center/cover;
+}
+
+.game_box6_img {
+    background: url(../img/game/banner_img10.jpg)center/cover;
+}
+
+.game_box7_img {
+    background: url(../img/game/banner_img11.jpg)center/cover;
+}
+
+.game_box8_img {
+    background: url(../img/game/banner_img12.jpg)center/cover;
+}
+
+.game_box9_img {
+    background: url(../img/game/banner_img0.jpg)center/cover;
+}
+
+.game_box10_img {
+    background: url(../img/game/banner_img1.jpg)center/cover;
+}
+
+.game_box11_img {
+    background: url(../img/game/banner_img2.jpg)center/cover;
+}
+
+.game_box_p {
+    padding: 0 10px;
+    height: calc(100% - 300px);
+    display: grid;
+    align-content: space-between;
+}
+
+.game_box_p>h2 {
+    padding: 10px 0;
+}
+
+.game_box_p>h4 {
+    padding: 10px 0;
+}
+
+.game_box_p>p {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .main_banner_img {
+        width: 100%;
+    }
+    
+    .btn_item_L {
+        right: calc(40% - 192px);
+    }
+
+    .btn_item_R {
+        right: calc(40% - 274px);
+    }
+
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .game_box {
+        width: 100%;
+    }
+    .banner_box{
+        height: 280px;
+    }
+    .main_banner_img {
+        height: 280px;
+    }
+    .item{
+        width: 270px;
+        height: 170px;
+        top: 50px;
+    }
+    .btn_item{
+       display: none;
+    }
+   
+}
+@media screen and (max-width:450px){
+    .game_box {
+        width: 100%;
+    }
+    .banner_box{
+        height: 250px;
+    }
+    .main_banner_img {
+        height: 250px;
+    }
+    .item{
+        width: 253px;
+        height: 147px;
+        top: 50px;
+    }
+
+   
 }
