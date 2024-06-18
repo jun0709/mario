@@ -3,6 +3,7 @@
     height: 200px;
     background: #ddd;
     position: relative;
+    overflow:hidden;
 }
 .footer_nav{
     width:800px;
